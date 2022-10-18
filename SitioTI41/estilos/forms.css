@@ -1,0 +1,87 @@
+﻿*{
+    margin:0px;
+    padding:0px;
+}
+nav{
+    width:100%
+}
+/*Estilo Menú de Navegación*/
+.menu ul {
+    display: flex;
+    list-style: none;
+    font-family: Century Gothic;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.menu a {
+    display: block;
+    border-radius: 2px;
+    border-style: outset;
+    border-color: orange;
+    padding: 12px;
+    background-color: #322ae9;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    width: 315px;
+}
+
+    .menu a:hover {
+        background-color: skyblue;
+    }
+
+.menu li:hover > ul {
+    display: block;
+}
+
+.menu li ul li {
+    position: relative;
+}
+
+    .menu li ul li ul {
+        right: -140px;
+        top: 0px;
+    }
+
+body {
+    background-color: #feef95;
+}
+
+form {
+    font-family: 'Century Gothic';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.textbox {
+    width: 360px;
+    height: 25px;
+    font-family: 'Century Gothic';
+    font-size: 15px;
+}
+
+table {
+    margin: 0px auto;
+}
+
+h1 {
+    font-family: Broadway;
+    font-size: 55px;
+    text-align: center;
+}
+
+/*
+.grid {
+    font-family: 'Century Gothic';
+    font-size: 20px;
+    background-color: orangered;
+    text-align: center;
+}*/
+
+.validaciones {
+    font-family: 'Century Gothic';
+    font-size: 13px;
+    color: red;
+}
+
