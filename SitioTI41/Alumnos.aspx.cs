@@ -41,7 +41,12 @@ namespace SitioTI41
                 cotCarrera = int.Parse(ddlCarrera.Text);
                 cotGrupo = int.Parse(ddlGrupo.Text);
 
-                //Proceso de insercion en la tabla alumno de la BD\
+                //Proceso de insercion en la tabla alumno de la BD
+                SQLInsert = "isnert into Alumnos(nombres, ap_paterno, ap_materno, sexo, email, id_grupo, id_carrera)" +
+                    "values ('{0}', '{1}', '{2}', '{3}', '{4}', {5}, {6}",cotNombre, cotApaterno, cotAmaterno, cotSexo, cotEmail, cotGrupo, cotCarrera);
+
+                SQLcmd.CommandText = SQLInsert;
+                SQLcmd.ExecuteNonQuery();
             }
 
         }
