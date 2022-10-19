@@ -30,10 +30,10 @@
     </header>
     <nav class="menu">
         <ul>
-            <li><a href="">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="">Alta</a></li>
             <li><a href="">Baja</a></li>
-            <li><a href="">Consulta</a></li>
+            <li><a href="Consulta_general_alumnos.aspx">Consulta</a></li>
             <li><a href="">Modificación</a></li>
         </ul>
     </nav>
