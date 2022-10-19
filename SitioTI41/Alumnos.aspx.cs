@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
+
 namespace SitioTI41
 {
     public partial class Alumnos : System.Web.UI.Page
@@ -18,7 +19,7 @@ namespace SitioTI41
 
         {
             string SQLInsert;
-            SqlConnection SqlCon = new SqlConnection("Data Source=LAB10-PC09; Initial Catalog= UT41; Integrate Security= True");
+            SqlConnection SqlCon = new SqlConnection("Data Source=LAB10-PC10; Initial Catalog= UT41; Integrated Security= True");
             SqlCommand SQLcmd = new SqlCommand();
             using (SqlCon)
             {
@@ -42,11 +43,20 @@ namespace SitioTI41
                 cotGrupo = int.Parse(ddlGrupo.Text);
 
                 //Proceso de insercion en la tabla alumno de la BD
-                SQLInsert = "isnert into Alumnos(nombres, ap_paterno, ap_materno, sexo, email, id_grupo, id_carrera)" +
-                    "values ('{0}', '{1}', '{2}', '{3}', '{4}', {5}, {6}",cotNombre, cotApaterno, cotAmaterno, cotSexo, cotEmail, cotGrupo, cotCarrera);
+                SQLInsert = String.Format("insert into Alumnos(nombres, ap_paterno, ap_materno, sexo, email, id_grupo, id_carrera)" +
+                    "values ('{0}', '{1}', '{2}', '{3}', '{4}', {5}, {6})",cotNombre, cotApaterno, cotAmaterno, cotSexo, cotEmail, cotGrupo, cotCarrera);
 
                 SQLcmd.CommandText = SQLInsert;
                 SQLcmd.ExecuteNonQuery();
+
+                string script = "alert('Alumno dado de alta correctamente');";
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, true);
+
+                SqlCon.Close(); //Cerramos la conecion con la BD
+                tbNombres.Text = "";
+                tbPaterno.Text = "";
+                tbMaterno.Text = "";
+                tbEmail.Text = "";
             }
 
         }
