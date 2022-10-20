@@ -56,7 +56,7 @@
                     </Columns>
                 </asp:GridView>
                 <asp:SqlDataSource ID="sqlAlumnos" runat="server"
-                    ConnectionString="<%$ ConnectionStrings:UT41ConnectionString %>>"
+                    ConnectionString="<%$ ConnectionStrings:UT41ConnectionString %>"
                     SelectCommand="Select * from Alumnos"></asp:SqlDataSource>
             </form>
         </section>
