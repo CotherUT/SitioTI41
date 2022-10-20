@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Alumnos.aspx" />
     <Content Include="Consulta_general_alumnos.aspx" />
+    <Content Include="Consulta_Nombre_Alumno.aspx" />
     <Content Include="estilos\forms.css" />
     <Content Include="estilos\index.css" />
     <Content Include="imagenes\cancelar.png" />
@@ -108,6 +109,13 @@
     </Compile>
     <Compile Include="Consulta_general_alumnos.aspx.designer.cs">
       <DependentUpon>Consulta_general_alumnos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta_Nombre_Alumno.aspx.cs">
+      <DependentUpon>Consulta_Nombre_Alumno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consulta_Nombre_Alumno.aspx.designer.cs">
+      <DependentUpon>Consulta_Nombre_Alumno.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
