@@ -72,6 +72,7 @@
     <Content Include="Consulta_Nombre_Alumno.aspx" />
     <Content Include="estilos\forms.css" />
     <Content Include="estilos\index.css" />
+    <Content Include="estilos\login.css" />
     <Content Include="imagenes\cancelar.png" />
     <Content Include="imagenes\editar.png" />
     <Content Include="imagenes\eliminar.png" />
@@ -93,6 +94,7 @@
     <Content Include="imagenes\transparencia.PNG" />
     <Content Include="imagenes\UTN.png" />
     <Content Include="index.html" />
+    <Content Include="login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -117,10 +119,33 @@
     <Compile Include="Consulta_Nombre_Alumno.aspx.designer.cs">
       <DependentUpon>Consulta_Nombre_Alumno.aspx</DependentUpon>
     </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ut.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ut.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="ut.xsc">
+      <DependentUpon>ut.xsd</DependentUpon>
+    </Content>
+    <None Include="ut.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ut.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="ut.xss">
+      <DependentUpon>ut.xsd</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
