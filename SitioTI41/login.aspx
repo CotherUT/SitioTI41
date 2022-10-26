@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     
     <!-- Links -->
-    <link rel="icon" type="image/png" href="../imgs/favicon.ico" />
     <link rel="stylesheet" href="estilos/login.css" />
 
     <title>Login</title>
@@ -17,7 +16,7 @@
 <body>
     <div class="login_box">
         <div class="logo_fondo">
-            <img class="logo" src="../imgs/logo.png" />
+            <img class="logo" src="imagenes/UTN.png" />
         </div>
         <br />
         <t1>Iniciar sesión</t1>
@@ -43,7 +42,7 @@
                 </tr>
             </table>
             <br>
-            <asp:Button ID="BtLogin" runat="server" Text="Iniciar sesión" />
+            <asp:Button ID="BtLogin" runat="server" Text="Iniciar sesión" OnClick="BtLogin_Click" />
             <br>
         </form>
     </div>
