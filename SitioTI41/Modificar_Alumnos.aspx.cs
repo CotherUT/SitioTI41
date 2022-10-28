@@ -11,7 +11,8 @@ namespace SitioTI41
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            tbDatos.Visible = false;
+            tbBotones.Visible = false;
         }
     }
 }
