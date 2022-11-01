@@ -42,7 +42,7 @@
                     <asp:TextBox ID="tbIdAlumno" runat="server"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:Button ID="btnModificar" runat="server" Text="Modificar" />
+                    <asp:Button ID="btnModificar" runat="server" Text="Modificar" OnClick="btnModificar_Click" />
                 </td>
             </tr>
         </table>
@@ -130,7 +130,7 @@
         <table id="tbBotones" runat="server">
             <tr>
                 <td>
-                    <asp:ImageButton ID="btnGuardar" runat="server" ImageUrl="imagenes/guardar.png" />
+                    <asp:ImageButton ID="btnGuardar" runat="server" ImageUrl="imagenes/guardar.png" OnClick="btnGuardar_Click" />
                     <asp:ImageButton ID="btnCancelar" runat="server" ImageUrl="imagenes/cancelar.png" />
                 </td>
             </tr>
