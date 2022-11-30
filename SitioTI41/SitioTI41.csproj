@@ -97,6 +97,8 @@
     <Content Include="index.html" />
     <Content Include="login.aspx" />
     <Content Include="Modificar_Alumnos.aspx" />
+    <Content Include="Subidos_Exitosos.html" />
+    <Content Include="subir_archivo.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -143,6 +145,13 @@
       <DependentUpon>Modificar_Alumnos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="subir_archivo.aspx.cs">
+      <DependentUpon>subir_archivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="subir_archivo.aspx.designer.cs">
+      <DependentUpon>subir_archivo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ut.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
